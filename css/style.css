@@ -155,7 +155,7 @@ body {
 
 #messageInp {
     width: 95%;
-    background-color: rgb(33,33,31);
+    background-color:transparent;
     font-size: large;
     border: none;
     border-radius: 6px;

@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000');
+const socket = io('https://chatmosphere-chat-app.onrender.com');
 const form = document.getElementById('send-container');
 const msginp = document.getElementById('messageInp');
 const messageContainer = document.querySelector('.container');

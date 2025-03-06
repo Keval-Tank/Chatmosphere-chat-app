@@ -2,8 +2,8 @@ body {
     background-color:rgb(0, 0, 0);
     background-position: center;
     background-size: cover;
-    
     font-family: 'Roboto', sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('bg3.png'); 
 }
 
 #logo {
@@ -17,12 +17,12 @@ body {
     border: 2px solid transparent;
     border-radius: 1rem;
     max-width: 955px;
-    padding:10px;
+    padding:20px;
     height: 77vh;
     margin: auto;
     overflow-y: auto;
     margin-bottom: 20px;
-    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url('bg1.png'); 
+    
     background-position: center;
     background-size: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -59,8 +59,8 @@ body {
     max-height: 40px;
     max-width: fit-content;
     gap:8px;
-    position:fixed;
-    right:25px;
+    position:relative;
+    right:-90px;
     
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 .send{
-    padding: 8px;
+    padding: 10px;
 }
 
 #messageInp {

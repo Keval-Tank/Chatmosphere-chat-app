@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "socket.io": "^4.7.5",
-    "vite": "^5.4.8"
+    "fs": "^0.0.1-security",
+    "socket.io": "^4.8.1",
+    "vite": "^5.4.11"
   }
 }

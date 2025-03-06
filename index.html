@@ -12,32 +12,46 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar" data-bs-theme="dark">
         <div class="navcont">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="css/l6.JPG" alt="" id="logo"></a>
-            </div>
-            <div class="users" id="users">
+                <!-- <span id="roomname" class="rname">Keval</span><span class="rname">'s Room</span>
+                <p id="rID" class="roomID">RoomID: <span class="roomID" id="numbers"></span></p> -->
+                <img src="css/l6.JPG" alt="logo" id="logo">
+            </div> 
+            
+            <button class="users" id="users">
                 <i class="fa-solid fa-users fa-lg"></i>
                 <p id="ucount">0</p>
-            </div>
+            </button>
+        </div>
         </div>
     </nav>
     <div class="megacontainer">
 
         <div class="container">
-            <!-- <div class="message left">Aur Bhai Kiski?</div>
-            <div class="message right">Taru Kaam kar ne...</div> -->
+            <div id="userList" style="display: none;">
+                <i class="fa-solid fa-user" style="color: #ffffff; margin-bottom: 20px; margin-left:5px;"></i>
+                <!-- <i class="fa-solid fa-users " style="color: #ffffff;"></i> -->
+                <p style="display: inline;" id="u_title">Members
+                </p>
+                <button id="closebtn"><i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i></button>
+                <div id="list">
+                </div>
+            </div>
         </div>
     </div>
     <div class="send">
-        <form action="#" id="send-container">
-            <input type="text" name="messageInp" id="messageInp" placeholder="Send a text">
+        <form action="#" method="post" enctype="multipart/form-data" id="send-container">
+            <div id="input">
+                <label for="fileinp"><i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i></label>
+                <input type="file" name="fileInput" id="fileinp">
+                <input type="text" name="messageInp" id="messageInp" placeholder="Send a text">
+            </div>
             <button type="submit" class="btn" id="btn"><i class="fa-solid fa-paper-plane fa-l"
                     style="color: #ffffff;"></i></button>
         </form>
